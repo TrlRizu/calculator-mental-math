@@ -1,0 +1,160 @@
+
+.display-text {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .display-text {
+    font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .display-text {
+    font-size: 2.5rem;
+    }
+}
+
+.question-list {
+    margin-top: 20px;
+}
+
+
+.container {
+    /* height: 50vh;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    /* background: #c8c8c8; */
+    background: #ecf0f3;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px 15px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.input-form input {
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+    font-size: 75px;
+    text-align: right;
+    flex: 1;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                    5px 5px 12px rgba(0, 0, 0, 0.12);
+    width: 400px;
+
+}
+
+.input-form button {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); */
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0,0,0,.16);
+    background: transparent;
+    font-size: 20px;
+    color: #0000005f;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.input-form button:hover {
+    background-color: #ecf0f3;
+}
+
+.input-form .equal {
+    width: 175px;
+
+}
+
+.question-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.question-list {
+    text-align: center;
+    margin-bottom: 25em;
+}
+
+.question {
+    font-size: 30px;
+}
+
+#question-heading {
+    font-size: 75px;
+    font-weight: bold;
+    /* position: absolute; */
+    top: 10px;
+}
+
+
+label {
+    font-size: 50px;
+    font-weight: bold;
+    color: #02B1B1;
+}
+
+.timer-display {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                5px 5px 12px rgba(0,0,0,.16);
+    font-size: 20px;
+    color: #0000005f;
+    /* background: transparent; */
+}
+
+#timer {
+    font-size: 1rem;
+}
+
+.points-display {
+    border: none;
+    outline: 0;
+    text-align: center;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); */
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0,0,0,.16);
+    background: transparent;
+    font-size: 20px;
+    color: #0000005f;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#points {
+    font-size: 1rem;
+}

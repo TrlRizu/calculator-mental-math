@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/main.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="calculator">
+                    <form class="input-form">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control display-text" name="display" readonly>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="clearDisplay(event)">AC</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="deleteLast(event)">DE</button>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="points" class="points-display"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div id="timer" class="timer-display"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('7', event)">7</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('8', event)">8</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('9', event)">9</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('*', event)">*</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('6', event)">6</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('5', event)">5</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('4', event)">4</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('-', event)">-</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('1', event)">1</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('2', event)">2</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('3', event)">3</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('+', event)">+</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('00',event)">00</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-secondary btn-block" onclick="updateScreen('0',event)">0</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="equal btn btn-secondary btn-block" onclick="checkAnswer()">Enter</button>
+                            </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="question-container col-md-6">
+                <div class="question-list">
+                    <h1 class="questions" id="question-heading">QUESTION</h1>
+                    <div id="question-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
